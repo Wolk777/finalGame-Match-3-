@@ -1,0 +1,294 @@
+html {
+	position: relative;
+	height: 100%;
+}
+
+body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Electrolize', 'Segoe UI', Helvetica, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 14px;
+	text-align: justify;
+}
+
+#content{
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	margin: auto;
+	background-image: url('../image/background.jpg');
+	background-size: auto;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+}
+
+#site_content{
+	position: absolute;
+	left: 20%;
+	width: 727px;
+	height: 480px;
+	border: 15px double rgba(197, 115, 209, 0.7);
+}
+
+a {
+	text-decoration: none;
+}
+
+.header{
+	margin-bottom: 45px;
+	position: relative;
+	z-index: 30;
+}
+
+nav{
+	border-width: 2px 2px 2px 2px;
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-radius: 25px;
+}
+
+nav a{
+	display: inline-block;
+	padding: 10px 20px 15px 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+nav a.active {
+    background-color: darkgray;
+    border-radius: 20px;
+    color: white;
+}
+
+#player_info{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 478px;
+	width: 245px;
+	background-image: url('../image/backgroundInfo.png');
+	background-repeat: no-repeat;
+}
+
+#scoreText{
+	position: absolute;
+	top: 230px;
+	left: 40px;
+	height: 75px;
+	width: 100px;
+	left: 73px;
+	font-family: 'Electrolize', 'Segoe UI', Helvetica, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 32px;
+	text-align: center;
+	color: #e4e4e4;
+	word-wrap: break-word;
+}
+
+#score{
+	position: relative;
+	font-size: 22px;
+	top: 0px;	
+}
+
+#level{
+	position: relative;
+	top: 180px;
+	left:70px;
+	height: 35px;
+	width: 100px;
+	font-family: 'Electrolize', 'Segoe UI', Helvetica, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: #e4e4e4;	
+}
+
+#timer{
+	position: absolute;
+	top: 20px;
+	left:13px;
+	width: 220px;
+	height: 28px;
+}
+
+#timerStrip{
+	position: relative;
+	height: 100%;
+	border-radius: 25px;
+	opacity: 0.7;
+	background: lime;
+}
+
+.btn{
+	position: absolute;
+	left:40px;
+	height: 40px;
+	width: 160px;
+	bottom: 12px;
+	font-family: 'Electrolize', 'Segoe UI', Helvetica, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 25px;
+	text-align: center;
+}
+
+.btn a{
+	position: relative;
+	top:4px;
+	color: #e4e4e4;
+}
+
+#btnStart{
+	bottom: 77px;
+}
+
+#scoreEnd{
+	position: absolute;
+	top:85px;
+	left: 70px;
+	height: 60px;
+	width: 110px;
+	font-family: 'Electrolize', 'Segoe UI', Helvetica, Arial, 'Trebuchet MS', sans-serif;
+	font-size: 23px;
+	text-align: center;
+	color: #3a2918;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    height: 230px;
+    max-height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    background: white;
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+.modal_closed {
+    display: none;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.form-fieldz{
+	font-size: 30px;
+    font-family: 'Electrolize', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+h1{
+	text-align: center;
+	margin:5px;
+}
+
+.modal__header{
+    border-bottom: 1px red solid;
+    padding: 3px 15px;
+    background: #4992e5;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.modal__content{
+    padding: 5px;
+    margin: 35px 3px;
+    font-size: 20px;
+}
+
+.modal__content input{
+	margin-left: 10px; 
+	width:200px;
+	height:30px;
+	font-size: 16px;
+}
+
+.modal__footer button {
+    border: 1px #98c4ed solid;
+    border-radius: 5px;
+    padding: 4px 12px;
+    margin: 0 10px;
+    background: #4992e5;
+    color: white;
+    font-size: 14px;
+    font-family: 'Electrolize', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.modal__footer button:hover {
+    background-color: #3d80cc;
+}
+
+.div_field {
+	margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Electrolize', 'Segoe UI', Helvetica, Arial, sans-serif;;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+#textBox{
+	position: relative;
+	padding: 0px 5px;
+	font-size: 15px;
+	height: 100%;
+	color: white;
+}
+
+#textBox h2{
+	margin: 12px;
+}
+
+#tableResult{
+	position: absolute;
+	margin-top: 30px;
+	left:30%;
+	width: 350px;
+}
+
+table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 20px;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+th, td:first-child {
+	background: #a9747a;
+	color: white;
+	padding: 10px 20px;
+}
+
+th, td {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+}
+
+td {
+	background: #887eb2;
+}
+
